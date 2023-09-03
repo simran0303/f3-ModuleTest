@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="contentLoader()">
+
+    <main>
+        <div class="black-div" id="current-image-container">
+            <div class="heading" id="heading" >
+                NASA Picture of the Day
+            </div>
+            <div class="image" id="image">
+                
+            </div>
+            <div class="title" id="title">
+                
+            </div>
+            <div class="content" id="content">
+              
+            </div>
+        </div>
+
+        <div class="search">
+            <h2>Search for a Picture of the Day</h2>
+            <form action="" id="search-form">
+                <label for="search-input">Select a date:</label>
+                <input type="date" name="search-input" id="search-input">
+            </form>
+            <button class="btn" id="view_button" onclick="saveSearch()">
+                Search
+            </button>
+            <div class="history">
+                <h2>Previous Searches</h2>
+                <div class="dates">
+                    <ul id="search-history">
+                        <li><a href="">2023-09-05</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
